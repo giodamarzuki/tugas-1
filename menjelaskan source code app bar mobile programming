@@ -1,0 +1,75 @@
+import 'package:flutter/material.dart';
+
+class Tampilan extends StatelessWidget { // Merupakan class tampilan yg akan memuat kelas StatelessWidget
+  const Tampilan({required this.title, Key? key}) : super(key: key);
+
+  // Bidang dalam subkelas Widget selalu ditandai "final".
+
+  final Widget title;
+
+  @override 
+  Widget build(BuildContext context) { // Merupakan fungsi untuk kelas yang akan menampilkan widget atau tampilan ke layar
+    return Container( // merupakan fungsi yang memuat berbagai widget didalamnya
+      height: 56.0, // dalam piksel logis
+      padding: const EdgeInsets.symmetric(horizontal: 8.0),
+      decoration: BoxDecoration(color: Colors.blueGrey[500]),
+      // Baris adalah tata letak horizontal dan linier.
+      child: Row(
+        // <Widget> adalah jenis item dalam daftar.
+        children: [
+          const IconButton(
+            icon: Icon(Icons.menu),
+            tooltip: 'Navigation menu',
+            onPressed: null, // null menonaktifkan tombol
+          ),
+          // Diperluas memperluas anaknya
+          // untuk mengisi ruang yang tersedia.
+          Expanded(
+            child: title,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class MyScaffold extends StatelessWidget { // Merupakan class MyScaffold yg akan memuat kelas StatelessWidget
+  const MyScaffold({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) { // Merupakan fungsi untuk kelas yang akan menampilkan widget atau tampilan ke layar
+    // Materi adalah bagian konseptual
+    // kertas tempat UI muncul.
+    return Material( // Merupakan fungsi yang memuat berbagai widget didalamnya
+      // Kolom adalah tata letak vertikal dan linier.
+      child: Column(
+        children: [
+          Tampilan(
+            title: Text(
+              '',
+              style: Theme.of(context)
+                  .primaryTextTheme
+                  .headline6,
+            ),
+          ),
+          const Expanded(
+            child: Center(
+              child: Text('Welcome to Gio Arth'),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+void main() { // Mengeksekusi program yang akan dijalankan
+  runApp( // Berguna untuk pusat agar program yang dijalankan dapat ditampilkan
+    const MaterialApp(
+      title: 'My app', // digunakan oleh pengalih tugas OS
+      home: SafeArea(
+        child: MyScaffold(),
+      ),
+    ),
+  );
+}
