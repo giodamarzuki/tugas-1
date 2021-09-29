@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title> CSS Website Layout </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="header">
+	<h1> SELAMAT DATANG DI TOURNAMET CUP ESI KAMPAR </h1>
+</div>
+
+<div class="topnav">
+		<a href="#"> home </a>
+		<a href="#"> pendaftaran </a>
+		<a href="#"> bantuan </a>
+	</div>
+
+	<div>
+		<img src="br.png" alt="" class="banner">
+
+	</div>
+
+<div class="row">
+		<div class="column">
+			<h1> TENTANG ESI CUP </h1>
+			<p>
+				Selamat datang di situs web ESI KAMPAR yang dijalankan oleh KONI dan afiliasinya serta korporasi terkait (secara individu dan bersama-sama, "ESI KAMPAR", "kami" [we,us, our]). ESI KAMPAR mengemban tanggung jawabnya berdasarkan undang-undang (UU) dan regulasi privasi yang berlaku ("UU Privasi") secara serius dan berkomitmen untuk menghormati hak privasi serta kekhawatiran semua TOURNAMENT (“PERTANDINGAN”) dan situs web ESI KAMPAR milik kami ("Situs") (kami merujuk ke TOURNAMENT, Situs dan layanan yang kami sediakan seperti diuraikan di Situs milik kami secara bersama-sama, sebagai "Layanan"). Kami mengakui pentingnya data pribadi yang Anda percayakan kepada kami, dan berpendapat bahwa ini adalah tanggung jawab kami untuk secara selayaknya mengelola, melindungi dan memproses data pribadi Anda. Kebijakan Privasi ini (“Kebijakan Privasi”) dirancang untuk membantu Anda dalam memahami, bagaimana kami mengumpulkan, menggunakan, mengungkapkan dan/atau memproses data pribadi yang sudah Anda berikan kepada kami dan/atau yang kami miliki mengenai diri Anda, baik saat ini maupun di waktu mendatang, serta untuk membantu Anda dalam membuat keputusan setelah penjelasan, sebelum memberikan data pribadi Anda apa pun kepada kami.
+			</p>
+		</div>
+
+		<div class="column">
+			<h1> INFO PENDAFTARAN CUP </h1>
+			<p>
+				Dengan menggunakan Layanan, mendaftar TOURNAMENT pada kami, atau mengunjungi Situs, berarti Anda mengakui dan menyetujui bahwa Anda menerima praktik, persyaratan, dan/atau kebijakan yang diuraikan dalam Kebijakan Privasi ini, dan dengan ini Anda mengizinkan kami untuk mengumpulkan, menggunakan, mengungkapkan dan/atau memproses data pribadi Anda seperti yang diuraikan di dalam dokumen ini. JIKA ANDA TIDAK MENGIZINKAN PEMROSESAN DATA PRIBADI ANDA SEPERTI DIURAIKAN DI DALAM KEBIJAKAN PRIVASI INI, HARAP JANGAN MENGGUNAKAN LAYANAN KAMI ATAU MENGAKSES PERMAINAN ATAU SITUS. Jika kami mengubah Kebijakan Privasi, kami akan menayangkan perubahan itu atau mengubah Kebijakan Privasi pada situs web kami. Kami berhak mengubah Kebijakan Privasi ini kapan saja.
+			</p>
+		</div>
+
+
+		<div class="column">
+			<h1> SYARAT PENDAFTARAN CUP </h1>
+			<p>
+				Data pribadi yang mungkin dikumpulkan ESI KAMPAR untuk tournament ini, termasuk tetapi tidak terbatas pada:
+ 
+				• nama;
+ 
+				• alamat email;
+				 
+				• tanggal lahir;
+				 
+				• alamat penagihan;
+				 
+				• informasi rekening bank dan pembayaran;
+				 
+				• nomor telepon; 
+				 
+				• jenis kelamin;
+				 
+				• nama team;
+
+			</p>
+		</div>
+	</div>
+
+	<div class="footer">
+		<p> copyright @evos-gidz.com edited  by gio damarzuki </p>
+	</div>
+
+
+
+</body>
+</html>
